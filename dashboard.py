@@ -233,6 +233,11 @@ def main():
             (df['center_type'].isin(center_types))
         ]
     
+    # Check if filtered data is empty
+    if filtered_df.empty:
+        st.warning("⚠️ No data available for the selected filters. Please adjust your filter criteria.")
+        st.stop()
+    
     # Calculate metrics
     metrics = calculate_metrics(filtered_df)
     
