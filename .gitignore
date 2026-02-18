@@ -1,0 +1,10 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.csv
+*.pdf
+api_data_aadhar_enrolment_*.csv
+sorted_aadhaar_data.csv
+visualizations/
